@@ -61,7 +61,6 @@ while True:
     elif event == "Start":
         print("Debug: start")
         print("Debug: values",values)
-        print("Debug: Pressed 'Help'")
         hotkey = values.get("hotkey")
         infinite = values.get("infinite")
         random = values.get("random")
@@ -79,6 +78,7 @@ while True:
         window.perform_long_operation(long_operation_logic,"") #also look in line 20
 
     elif event == "Help":
+        print("Debug: Pressed 'Help'")
         sg.popup_scrolled(helpText,title="Help")
 
     elif event == "close":
